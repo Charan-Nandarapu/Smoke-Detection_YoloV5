@@ -1,5 +1,5 @@
-# Jetson_AIDsys
-Animal Intrusion Detection system, a deep learning model developed on Yolov5 .It is trained and deployed on NVIDIA Jetson Nano kit
+# Jetson_SDS
+SMOKE DETECTION SYSTEM. a deep learning model developed on Yolov5 .It is trained and deployed on NVIDIA Jetson Nano kit
 
 ## Custom Object Detection(YOLOV5)
 
@@ -67,15 +67,22 @@ Run the Deepstream-app using following command:
 ## Output:
 
 ### Image Inference:
-![image](https://user-images.githubusercontent.com/91280385/191220894-0f6c789b-426e-4bf3-bffd-d79d0bbd5278.png)
+![smoke_inference_1](https://user-images.githubusercontent.com/96180326/191325495-2c1c2dfb-331e-45c1-91d6-1f5f7894eab2.jpeg)
+![smoke_inference_2](https://user-images.githubusercontent.com/96180326/191325546-b1146dcc-7b68-4931-9cae-a3c30aaeb865.jpeg)
+![smoke_inference_3](https://user-images.githubusercontent.com/96180326/191325564-d6395a29-46c7-4c7b-9b17-90565d9ae4a4.jpeg)
+![smoke_inference_4](https://user-images.githubusercontent.com/96180326/191325579-a1b68f90-c6b3-40ef-89fe-d97d4e5bb515.jpeg)
+
 
 ### Video Inference:
 
 
 ### Live Inference(Camera) on Jetson: 
 
-### Using Deepstream:
+### Using Detect.py:
+
+
+https://user-images.githubusercontent.com/96180326/191325656-6840a258-7366-42f1-96c7-12c5400677cc.mp4
 
 
 
-https://user-images.githubusercontent.com/91280385/191314739-a6f7e113-42d6-4bdd-bf4d-ec546a6ea5ff.mp4
+
