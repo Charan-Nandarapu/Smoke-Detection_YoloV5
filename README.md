@@ -29,9 +29,33 @@ Change the yaml file according to the classes of the data we have, and change th
 
 Yaml file can be found at Yolov5/data/coco128.yaml
 
+The Source code of yolov5 algorithm to train the model is attached with in this repo.
+
+After training, download best.pt file.
 ### Testing the model:
 
 #### Detect.py:
+open the terminal and clone the yoloV5 repository from ultralytics using following command:
+ 
+ git clone https://github.com/ultralytics/yolov5
+ 
+If git is not installed in your system, install it using the below command:
+     sudo apt-get update
+     sudo apt-get upgrade
+     sudo apt-get install git
+Now navigate to yolov5 directory and open requirements.txt file:
+
+     cd yolov5
+     vi requirements.txt
+Edit the following lines. Here you need to press i first to enter editing mode. Press ESC, then type :wq to save and quit:
+
+     matplotlib==3.2.2
+     numpy==1.19.4
+     # torch>=1.7.0
+     # torchvision>=0.8.1
+
+Now copy the best.pt file into yolov5 directory and perform the below action.
+
 open terminal and enter:
 
     python3 detect.py --weights best.pt --source 0
@@ -42,6 +66,9 @@ open terminal and enter:
                                               video.mp4
                                               
                                               url
+The custom object detection will be successfully performed by the model.
+
+Now let us try do deploy the model into DEEPSTREAM.
 
 ### Deepstream:
 
