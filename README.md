@@ -29,7 +29,7 @@ Change the yaml file according to the classes of the data we have, and change th
 
 Yaml file can be found at Yolov5/data/coco128.yaml
 
-The Source code of yolov5 algorithm to train the model is attached with in this repo.
+The Source code of yolov5 algorithm to train the model is attached within this repo.
 
 After training, download best.pt file.
 ### Testing the model:
@@ -68,9 +68,19 @@ open terminal and enter:
                                               url
 The custom object detection will be successfully performed by the model.
 
-Now let us try do deploy the model into DEEPSTREAM.
+### Video Inference:
+
+
+### Live Inference(Camera) on Jetson: 
+
+### Using Detect.py:
+
+
+https://user-images.githubusercontent.com/96180326/191325656-6840a258-7366-42f1-96c7-12c5400677cc.mp4
 
 ### Deepstream:
+
+Now let us try do deploy the model into DEEPSTREAM.
 
 #### Generating weigths
 1.Clone the Deepstrean-Yolo Repository
@@ -104,15 +114,6 @@ Run the Deepstream-app using following command:
 ![smoke_inference_4](https://user-images.githubusercontent.com/96180326/191325579-a1b68f90-c6b3-40ef-89fe-d97d4e5bb515.jpeg)
 
 
-### Video Inference:
-
-
-### Live Inference(Camera) on Jetson: 
-
-### Using Detect.py:
-
-
-https://user-images.githubusercontent.com/96180326/191325656-6840a258-7366-42f1-96c7-12c5400677cc.mp4
 
 
 
