@@ -25,12 +25,15 @@ https://drive.google.com/file/d/1sAoc-ObRKzB3ge7CJS76sm8_RbzKxXss/view?usp=shari
 https://github.com/ultralytics/yolov5
 
 ### Training the model:
-Change the yaml file according to the classes of the data we have, and change the location of train and valid
+Open a new google colab notebook in any browser
+upload the dataset to the colab environment(you can use drag and drop)
 
-Yaml file can be found at Yolov5/data/coco128.yaml
+Change the yaml file according to the classes of the data we have, and change the location of train and valid
+Yaml file can be found at Yolov5/data/coco128.yaml  (OR)
+replace coco128.yaml file with our data.yaml
 
 The Source code of yolov5 algorithm to train the model is attached within this repo.
-
+Choose your batch size and number of epochs based on the size of your training data.
 After training, download best.pt file.
 ### Testing the model:
 
@@ -43,19 +46,18 @@ If git is not installed in your system, install it using the below command:
      sudo apt-get update
      sudo apt-get upgrade
      sudo apt-get install git
-Now navigate to yolov5 directory and open requirements.txt file:
+Now navigate to yolov5 directory and open requirements.txt file using following commands in terminal:
 
      cd yolov5
      vi requirements.txt
-Edit the following lines. Here you need to press i first to enter editing mode. Press ESC, then type :wq to save and quit:
+Edit the following lines. Here you need to press i first to enter editing mode,then make changes as below. Press ESC, then type :wq to save and quit:
 
      matplotlib==3.2.2
      numpy==1.19.4
      # torch>=1.7.0
      # torchvision>=0.8.1
 
-Now copy the best.pt file into yolov5 directory and perform the below action.
-
+Now copy the best.pt file into yolov5 directory.
 open terminal and enter:
 
     python3 detect.py --weights best.pt --source 0
@@ -77,7 +79,7 @@ The custom object detection will be successfully performed by the model.
 
 
 https://user-images.githubusercontent.com/96180326/191325656-6840a258-7366-42f1-96c7-12c5400677cc.mp4
-
+'''
 ### Deepstream:
 
 Now let us try do deploy the model into DEEPSTREAM.
@@ -102,9 +104,9 @@ Now let us try do deploy the model into DEEPSTREAM.
 
 Run the Deepstream-app using following command:
 
-        sudo deepstream-app -c animal_config.txt
+        sudo deepstream-app -c _config.txt
 
-
+'''
 ## Output:
 
 ### Image Inference:
